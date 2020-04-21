@@ -1,0 +1,671 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    height: 300vh;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    background: #fff;
+}
+
+
+/*--------------HEADING---------------*/
+
+header {
+    height: 400px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    font-family: monospace;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder
+}
+
+.logo span {
+    color: rgb(74, 107, 255);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul:first-child {
+    flex: 1;
+}
+
+nav ul:nth-child(2) {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul:nth-child(3) {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul:nth-child(3) li:first-child {
+    border-right: 5px solid rgb(74, 107, 255);
+    padding-right: 10px;
+}
+
+nav ul:nth-child(3) li:last-child {
+    padding-left: 10px;
+}
+
+nav ul:nth-child(2) li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.nav-links {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-link2 {
+    color: rgb(74, 107, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link2:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+header {
+    height: auto;
+    width: auto;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 3px;
+    /*background: url('img/gradient-geometric-shape-background_78532-374.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+header section .heading-box1 {
+    border: none;
+    height: 350px;
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+.heading-box2 {
+    width: auto;
+    height: auto;
+    background: url("img/images (1).jpeg");
+    border: 2px solid none;
+    background-size: 100;
+    background-repeat: no-repeat;
+}
+
+.heading-box1 h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: relative;
+    left: -300%;
+    animation: slidein 0.3s 0.3s forwards cubic-bezier(.5, .5, .5, 1.5);
+    color: #000;
+}
+
+.heading-box1 p {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: monospace;
+    color: #000;
+    opacity: 0.8;
+}
+
+.heading-box1 .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(102, 75, 255) 50%, transparent 50%);
+    background-position: 100% 0;
+    color: #000;
+    border: 2px solid rgb(102, 75, 255);
+    border-radius: 10px;
+    background-size: 200% 100%;
+    transition: 0.5s;
+}
+
+.heading-box1 .btn:hover {
+    color: #fff;
+    background-position: 0% 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heading-box1 span a {
+    color: #000;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.heading-box1 span a:hover {
+    opacity: 0.7;
+}
+
+
+/*------------------END OF HEADER-----------*/
+
+
+/*----------------- -SERVICES---------------*/
+
+main aside {
+    text-align: center;
+    margin-top: 30px;
+}
+
+aside a {
+    color: rgb(98, 71, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+aside a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+aside h3 {
+    color: #000;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 950px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.service div {
+    height: 200px;
+    border: 2px solid none;
+    box-shadow: 0 10px 20px #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.service div h3 {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service div p {
+    font-family: sans-serif;
+    opacity: 0.6;
+}
+
+.box1:hover {
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+}
+
+.box1 i:first-child {
+    color: orange;
+}
+
+.service div i:last-child:hover {
+    color: #fff;
+}
+
+.box2:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 40px;
+    transition: 0.8s;
+}
+
+.box2 i:first-child {
+    color: dodgerblue;
+}
+
+.box3:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 40px;
+    transition: 0.8s;
+}
+
+.box3 i:first-child {
+    color: purple;
+}
+
+.box4:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 40px;
+    transition: 0.8s;
+}
+
+.box4 i:first-child {
+    color: rosybrown;
+}
+
+.box5:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 40px;
+    transition: 0.8s;
+}
+
+.box5 i:first-child {
+    color: teal;
+}
+
+.box6:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 40px;
+    transition: 0.8s;
+}
+
+.box6 i:first-child {
+    color: yellow;
+}
+
+.service div i:last-child {
+    color: rgb(98, 71, 255);
+}
+
+
+/*--------------END OF SERVICES-----------*/
+
+
+/*--------------PRICING---------------*/
+
+main aside:last-of-type {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main aside:last-of-type {
+    color: rgb(98, 71, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+aside:last-of-type a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+aside:last-of-type h3 {
+    color: #000;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin: auto;
+}
+
+.pricing div {
+    width: 300px;
+    height: 450px;
+    border: 2px solid none;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px #ddd;
+}
+
+.pricing div:first-child {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+}
+
+.pricing div:first-child h3 {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px 0 0 20px;
+    margin: 0 0 0 0;
+}
+
+.pricing div:last-child h3 {
+    color: #000;
+    font-family: sans-serif;
+    padding: 20px 0 0 20px;
+    margin: 0 0 0 0;
+}
+
+.p {
+    margin: 0 0 0 0;
+    padding: 10px 0 0 20px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.p2 {
+    margin: 0 0 0 0;
+    padding: 10px 0 0 20px;
+    color: #000;
+}
+
+p .price {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0 5px 0 0;
+}
+
+p .price2 {
+    color: #000;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0 5px 0 0;
+}
+
+.details {
+    color: #fff;
+    padding: 5px 0 0 20px;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.details2 {
+    color: #000;
+    padding: 5px 0 0 20px;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.pricing div ul {
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+}
+
+.pricing div .ul1 li {
+    color: #fff;
+    list-style-type: none;
+    line-height: 20px;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 0 0 0 20px;
+}
+
+.pricing div .ul2 li {
+    color: #000;
+    list-style-type: none;
+    line-height: 20px;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 0 0 0 20px;
+}
+
+.ul-tick {
+    width: 30px;
+    height: 30px;
+}
+
+.pricing div:first-child button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 5px;
+    color: dodgerblue;
+    margin: 10px 0 0 20px;
+}
+
+.pricing div:first-child button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.pricing div:last-child button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px 0 0 20px;
+}
+
+.pricing div:last-child button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.last-section {
+    display: grid;
+    grid-template-columns: 40% 40% 60%;
+    width: 800px;
+    grid-gap: 10px;
+    margin: 40px 0 0 0;
+}
+
+.last-section div {
+    border: 2px solid #fff;
+    height: 360px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 10px 30px #ddd;
+}
+
+.lsection-img {
+    width: 315px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.last-section div h2 {
+    font-family: monospace;
+    padding: 0 0 0 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.last-section div a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 0 0 20px;
+    opacity: 0.7;
+}
+
+.last-section div h4 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(74, 107, 255);
+    padding: 0 0 0 30px;
+}
+
+.last-section div h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 5px 0 0 30px;
+}
+
+.last-section div p {
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0 0 0 30px;
+    opacity: 0.6;
+}
+
+.footer-arrow {
+    width: 40px;
+    height: 30px;
+    border: 2px solid none;
+    box-shadow: 0px 10px 20px #ccc;
+    background: #fff;
+    color: rgb(74, 107, 255);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 25px;
+}
+
+.footer-arrow:hover {
+    background: -webkit-linear-gradient(right, rgb(142, 122, 255), rgb(74, 107, 255));
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    height: 300px;
+    background: rgb(74, 107, 255);
+    margin: 50px 0 0 0;
+}
+
+footer div h4 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+footer div {
+    border: none;
+    width: 100px;
+}
+
+.fbox1 {
+    flex: 1;
+    padding: 0 40px 40px 40px;
+}
+
+.fbox1 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 0 0;
+    font-family: monospace;
+}
+
+.fbox1 a i {
+    padding: 0 10px 0 0;
+}
+
+.fbox3 {
+    flex: 2;
+    padding: 0 40px 40px 40px;
+}
+
+.fbox3 label {
+    position: relative;
+    top: 0;
+    right: 100px;
+    bottom: 0;
+    left: 130px;
+}
+
+.fbox3 input {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+}
+
+.fbox3 button {
+    background: rgb(74, 107, 255);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    width: 80px;
+    height: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0 0 -80px;
+    border-right: 2px solid #fff;
+}
+
+.fbox3 button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.fbox3 i {
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 25px 0 0;
+}
+
+
+/*--------------END OF PRICING TABLE-------------*/
+
+
+/*--------------
+
+/*-------------KEYFRAMES-------------*/
+
+@keyframes slidein {
+    from {
+        left: -300%;
+    }
+    to {
+        left: 0%;
+    }
+}
